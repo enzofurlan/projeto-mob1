@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:paddingTop="24dp"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="FinApp"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewSubtitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sua lista de transações."
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@id/textViewTitulo" />
+
+    <ListView
+        android:id="@+id/listViewExtrato"
+        android:layout_width="wrap_content"
+        android:layout_height="578dp"
+        android:layout_below="@id/textViewSubtitulo"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/buttonVoltar"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listViewExtrato"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#1AAECA"
+        android:foregroundGravity="bottom"
+        android:text="Voltar" />
+
+</RelativeLayout>

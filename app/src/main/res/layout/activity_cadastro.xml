@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:paddingTop="24dp"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="FinApp"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewSubtitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adicione sua transação."
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp"
+        android:layout_below="@id/textViewTitulo" />
+
+    <Spinner
+        android:id="@+id/spinnerTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSubtitulo"
+        android:entries="@array/tipos"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerTipo"
+        android:hint="Descrição" />
+
+    <EditText
+        android:id="@+id/editTextValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDescricao"
+        android:hint="Valor"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/buttonSalvar"
+        android:layout_width="320dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextValor"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#1AAECA"
+        android:onClick="salvarTransacao"
+        android:text="Salvar" />
+
+    <Button
+        android:id="@+id/buttonCadastroVoltar"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSalvar"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#1AAECA"
+        android:foregroundGravity="bottom"
+        android:text="Voltar" />
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:paddingTop="24dp"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="FinApp"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewSubtitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seu gerenciador de gastos."
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp"
+        android:layout_below="@id/textViewTitulo" />
+
+    <Button
+        android:id="@+id/buttonCadastrar"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSubtitulo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#1AAECA"
+        android:text="Cadastrar" />
+
+    <Button
+        android:id="@+id/buttonExtrato"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Extrato"
+        android:layout_below="@id/buttonCadastrar"
+        android:backgroundTint="#1AAECA"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/buttonSair"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#1AAECA"
+        android:text="Sair"
+        android:layout_below="@id/buttonExtrato"/>
+
+</RelativeLayout>

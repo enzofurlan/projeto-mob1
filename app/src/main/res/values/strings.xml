@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FinApp</string>
+    <string-array name="tipos">
+        <item>Débito</item>
+        <item>Crédito</item>
+    </string-array>
+</resources>
