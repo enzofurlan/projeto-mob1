@@ -1,2 +1,4 @@
-# projeto-mob1
-Projeto MOB1
+# projeto-mob
+
+## Descrição
+Projeto final da disciplina de Desenvolvimento Mobile I - Equipe 8
